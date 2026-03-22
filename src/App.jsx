@@ -93,12 +93,11 @@ export default function App() {
   };
 
   const uploadToGemini = async (fileObj, apiKey) => {
-    const response = await fetch(`https://generativelanguage.googleapis.com/upload/v1beta/files?key=${apiKey}`, {
+    const uploadUrl = `https://generativelanguage.googleapis.com/upload/v1beta/files?uploadType=media&key=${apiKey}`;
+    const response = await fetch(uploadUrl, {
       method: "POST",
       headers: {
-        "X-Goog-Upload-Protocol": "raw",
-        "X-Goog-Upload-Header-Content-Type": "application/pdf",
-        "Content-Type": "application/pdf",
+        "Content-Type": fileObj.type || "application/pdf",
       },
       body: fileObj
     });
@@ -150,16 +149,20 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          systemInstruction: {
+            parts: [{ text: SYSTEM_PROMPT }]
+          },
           contents: [
             {
+              role: "user",
               parts: [
-                { text: SYSTEM_PROMPT },
                 {
                   fileData: {
-                    mimeType: "application/pdf",
+                    mimeType: uploadedFile.mimeType || file.type || "application/pdf",
                     fileUri: uploadedFile.uri
                   }
-                }
+                },
+                { text: "Extract and format the records from this medical document based entirely on your system instructions." }
               ]
             }
           ],
