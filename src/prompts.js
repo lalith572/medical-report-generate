@@ -38,9 +38,9 @@ These are administrative/scheduling pages, NOT medical records:
 3. NO duplicates — every line must be unique.
 4. GROUPING MULTIPLE DATES: 
    - Group multiple progress/SOAP notes of the same type (PT, Chiro, MRI Tech) into ONE line using "through": "Physical therapy SOAP progress notes dated 09/03/2025 through 10/22/2025...".
-   - If there are multiple Office Visits by the SAME exact doctor on different dates (excluding the very first Initial visit), group them into a SINGLE line formatted as: "Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. [Provider Name], MD."
+   - If there are multiple Office Visits by the SAME exact doctor on different dates (excluding the very first Initial visit), group them into a SINGLE line formatted as: "Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD."
    - Find the absolute earliest and latest dates for the "through" range. Do NOT list each date as a separate line.
-5. Provider name format: Ensure names are in normal First Last order. For medical doctors/physicians, ALWAYS prefix the name with "Dr." AND include the "MD" or "DO" suffix at the end (e.g., "Dr. Johanna Gonzalez, MD" or "Dr. Vikram Sobti, MD"). For non-physicians (DC, PT, L.Ac), use standard format (e.g., "Oliver Tello, PT").
+5. Provider name format: Ensure names are in normal First Last order. For medical doctors/physicians, DO NOT use both "Dr." and "MD" together. If the document has "MD" or "DO", format it as "Johanna Gonzalez, MD". If the document ONLY says "Dr.", format it as "Dr. Johanna Gonzalez". Never use "Dr. Johanna Gonzalez, MD". For non-physicians (DC, PT, L.Ac), use standard format (e.g., "Oliver Tello, PT").
 6. If provider name AND facility name both available → use PROVIDER name.
 7. If multiple providers from same facility → use FACILITY name.
 8. Look closely for printed or typed provider names. Only if the doctor's signature is completely unreadable AND there is no printed name anywhere on the page → write "illegible signature".
@@ -56,63 +56,63 @@ These are administrative/scheduling pages, NOT medical records:
 === STEP 5: TEMPLATE PHRASES — use exact match for each document type ===
 Prehospital care summary report dated mm/dd/yyyy from Facility Name.
 NF-2 form dated mm/dd/yyyy indicating injuries to [every body part from question #9].
-Procedure report for [left/right/bilateral] [C4-5, C5-6 and C6-7 etc.] [body part] [procedure name] under [guidance type] dated mm/dd/yyyy by Dr. Provider Name, MD.
+Procedure report for [left/right/bilateral] [C4-5, C5-6 and C6-7 etc.] [body part] [procedure name] under [guidance type] dated mm/dd/yyyy by Provider Name, MD.
 Emergency department medical record dated mm/dd/yyyy from Facility Name.
-ED history and physical examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
+ED history and physical examination report dated mm/dd/yyyy by Provider Name, MD.
 ED nurse triage note dated mm/dd/yyyy by Nurse Name.
 ED discharge summary note dated mm/dd/yyyy from Facility Name.
 ED progress note dated mm/dd/yyyy from Facility Name.
-X-ray report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-MRI report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-MRI-3T report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-CT report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-CT angiography report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Ultrasound report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
+X-ray report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+MRI report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+MRI-3T report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+CT report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+CT angiography report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Ultrasound report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
 Ultrasound report of the [body part] dated mm/dd/yyyy -- illegible signature. -- Impression: [full verbatim impression].
-MSK ultrasound report of the [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Carotid duplex ultrasound report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
+MSK ultrasound report of the [body part] dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Carotid duplex ultrasound report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
 Carotid duplex ultrasound report dated mm/dd/yyyy -- illegible signature. -- Impression: [full verbatim impression].
-TCD examination report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
+TCD examination report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
 TCD examination report dated mm/dd/yyyy -- illegible signature.
-Infrared/video ENG report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
+Infrared/video ENG report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
 Infrared/video ENG report dated mm/dd/yyyy -- illegible signature.
-Videonystagmography report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-EMG/NCV study of the upper extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-EMG/NCV study of the lower extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
+Videonystagmography report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+EMG/NCV study of the upper extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+EMG/NCV study of the lower extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
 EMG/NCV upper extremities report dated mm/dd/yyyy by Provider Name, DC -- Impression: [full verbatim impression].
-Electrodiagnostic upper extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Electrodiagnostic lower extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-EEG report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-ECG report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-SSEP upper extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-SSEP lower extremities report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Somatosensory evoked potential study of the median nerve dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Somatosensory evoked potential study tibial report dated mm/dd/yyyy by Dr. Provider Name, MD -- Impression: [full verbatim impression].
-Office visit report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up office visit report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. Provider Name, MD.
-Orthopedic office visit report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Initial orthopedic consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Initial comprehensive medical examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Initial examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Initial consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-History and physical examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Medical evaluation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Medical re-evaluation reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. Provider Name, MD.
-Initial PM&R evaluation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-PM&R medical re-evaluation reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up PM&R examination reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. Provider Name, MD.
-Neurological examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
+Electrodiagnostic upper extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Electrodiagnostic lower extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+EEG report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+ECG report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+SSEP upper extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+SSEP lower extremities report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Somatosensory evoked potential study of the median nerve dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Somatosensory evoked potential study tibial report dated mm/dd/yyyy by Provider Name, MD -- Impression: [full verbatim impression].
+Office visit report dated mm/dd/yyyy by Provider Name, MD.
+Follow-up office visit report dated mm/dd/yyyy by Provider Name, MD.
+Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD.
+Orthopedic office visit report dated mm/dd/yyyy by Provider Name, MD.
+Initial orthopedic consultation report dated mm/dd/yyyy by Provider Name, MD.
+Initial comprehensive medical examination report dated mm/dd/yyyy by Provider Name, MD.
+Initial examination report dated mm/dd/yyyy by Provider Name, MD.
+Follow-up consultation report dated mm/dd/yyyy by Provider Name, MD.
+Initial consultation report dated mm/dd/yyyy by Provider Name, MD.
+History and physical examination report dated mm/dd/yyyy by Provider Name, MD.
+Medical evaluation report dated mm/dd/yyyy by Provider Name, MD.
+Medical re-evaluation reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD.
+Initial PM&R evaluation report dated mm/dd/yyyy by Provider Name, MD.
+PM&R medical re-evaluation reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD.
+Follow-up PM&R examination reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD.
+Neurological examination report dated mm/dd/yyyy by Provider Name, MD.
 Initial neurological consultation report dated mm/dd/yyyy from Facility Name.
-Neurosurgical consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Pain management examination report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up pain management examination reports dated mm/dd/yyyy and mm/dd/yyyy by Dr. Provider Name, MD.
-Follow-up pain management examination reports dated mm/dd/yyyy through mm/dd/yyyy by Dr. Provider Name, MD.
-Initial pain management consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Pain management consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Procedure report for [left/right/bilateral] [levels] [body part] under [guidance type] dated mm/dd/yyyy by Dr. Provider Name, MD.
-Procedure report for [body part] trigger point injection with guidance dated mm/dd/yyyy by Dr. Provider Name, MD.
+Neurosurgical consultation report dated mm/dd/yyyy by Provider Name, MD.
+Pain management examination report dated mm/dd/yyyy by Provider Name, MD.
+Follow-up pain management examination reports dated mm/dd/yyyy and mm/dd/yyyy by Provider Name, MD.
+Follow-up pain management examination reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD.
+Initial pain management consultation report dated mm/dd/yyyy by Provider Name, MD.
+Pain management consultation report dated mm/dd/yyyy by Provider Name, MD.
+Procedure report for [left/right/bilateral] [levels] [body part] under [guidance type] dated mm/dd/yyyy by Provider Name, MD.
+Procedure report for [body part] trigger point injection with guidance dated mm/dd/yyyy by Provider Name, MD.
 Initial chiropractic examination report dated mm/dd/yyyy by Provider Name, DC.
 Chiropractic re-examination report dated mm/dd/yyyy through mm/dd/yyyy from Facility Name. or by Provider Name, DC.
 Chiropractic SOAP progress notes dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, DC.
@@ -131,31 +131,31 @@ Extracorporeal shockwave therapy (ESWT) note dated mm/dd/yyyy through mm/dd/yyyy
 Bioelectronics medicine progress notes dated mm/dd/yyyy through mm/dd/yyyy from Facility Name.
 Initial impairment disability evaluation report dated mm/dd/yyyy from Facility Name.
 Follow-up impairment disability evaluation report dated mm/dd/yyyy from Facility Name.
-Range of motion and manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Follow-up range of motion and manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Range of motion examination report dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Functional capacity evaluation report dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Independent medical evaluation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Independent medical re-evaluation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Orthopedic independent evaluation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Peer review report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Neurology peer review report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Internal medicine peer review report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Radiology review report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Operative report for [body part] dated mm/dd/yyyy by Dr. Provider Name, MD -- Procedure: [procedure].
-Anesthesia record dated mm/dd/yyyy by Dr. Provider Name, MD. or from Facility Name.
+Range of motion and manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Follow-up range of motion and manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Range of motion examination report dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Manual muscle testing examination report dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Functional capacity evaluation report dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Independent medical evaluation report dated mm/dd/yyyy by Provider Name, MD.
+Independent medical re-evaluation report dated mm/dd/yyyy by Provider Name, MD.
+Orthopedic independent evaluation report dated mm/dd/yyyy by Provider Name, MD.
+Peer review report dated mm/dd/yyyy by Provider Name, MD.
+Neurology peer review report dated mm/dd/yyyy by Provider Name, MD.
+Internal medicine peer review report dated mm/dd/yyyy by Provider Name, MD.
+Radiology review report dated mm/dd/yyyy by Provider Name, MD.
+Operative report for [body part] dated mm/dd/yyyy by Provider Name, MD -- Procedure: [procedure].
+Anesthesia record dated mm/dd/yyyy by Provider Name, MD. or from Facility Name.
 Preoperative assessment report dated mm/dd/yyyy from Facility Name.
-Postoperative record dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Internal medicine consultation report dated mm/dd/yyyy by Dr. Provider Name, MD.
-Progress note dated mm/dd/yyyy by Dr. Provider Name, MD.
-Interim note dated mm/dd/yyyy by Dr. Provider Name, MD.
+Postoperative record dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Internal medicine consultation report dated mm/dd/yyyy by Provider Name, MD.
+Progress note dated mm/dd/yyyy by Provider Name, MD.
+Interim note dated mm/dd/yyyy by Provider Name, MD.
 Laboratory report dated mm/dd/yyyy from Facility Name.
 Pharmacy prescription note dated mm/dd/yyyy from Pharmacy Name.
 Delivery receipt note dated mm/dd/yyyy from Pharmacy Name.
-Medical prescription note dated mm/dd/yyyy by Dr. Provider Name, MD.
-Durable medical equipment prescription note dated mm/dd/yyyy from Facility Name or by Dr. Provider Name, MD.
-Toxicology urinalysis screening report dated mm/dd/yyyy by Dr. Provider Name, MD.
+Medical prescription note dated mm/dd/yyyy by Provider Name, MD.
+Durable medical equipment prescription note dated mm/dd/yyyy from Facility Name or by Provider Name, MD.
+Toxicology urinalysis screening report dated mm/dd/yyyy by Provider Name, MD.
 Police accident report dated mm/dd/yyyy from Agency Name.
 Attorney letter dated mm/dd/yyyy by Provider Name.
 Bills from Medical Provider Name dated mm/dd/yyyy.

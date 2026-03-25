@@ -93,19 +93,43 @@ export default function App() {
   };
 
   const uploadToGemini = async (fileObj, apiKey) => {
-    const uploadUrl = `https://generativelanguage.googleapis.com/upload/v1beta/files?uploadType=media&key=${apiKey}`;
-    const response = await fetch(uploadUrl, {
+    const initRes = await fetch(`https://generativelanguage.googleapis.com/upload/v1beta/files?key=${apiKey}`, {
       method: "POST",
       headers: {
-        "Content-Type": fileObj.type || "application/pdf",
+        "X-Goog-Upload-Protocol": "resumable",
+        "X-Goog-Upload-Command": "start",
+        "X-Goog-Upload-Header-Content-Length": fileObj.size.toString(),
+        "X-Goog-Upload-Header-Content-Type": fileObj.type || "application/pdf",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ file: { displayName: fileObj.name || "medical_document.pdf" } })
+    });
+    
+    if (!initRes.ok) {
+      const errTxt = await initRes.text();
+      throw new Error(`Upload Init Failed: ${initRes.status} ${errTxt}`);
+    }
+
+    const uploadUrl = initRes.headers.get("x-goog-upload-url");
+    if (!uploadUrl) {
+      throw new Error("Missing upload URL from Google API.");
+    }
+
+    const uploadRes = await fetch(uploadUrl, {
+      method: "POST",
+      headers: {
+        "X-Goog-Upload-Command": "upload, finalize",
+        "X-Goog-Upload-Offset": "0"
       },
       body: fileObj
     });
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`Upload failed: ${response.status} ${errorText}`);
+
+    if (!uploadRes.ok) {
+      const errTxt = await uploadRes.text();
+      throw new Error(`Upload Bytes Failed: ${uploadRes.status} ${errTxt}`);
     }
-    const data = await response.json();
+
+    const data = await uploadRes.json();
     return data.file;
   };
 
@@ -149,9 +173,6 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          systemInstruction: {
-            parts: [{ text: SYSTEM_PROMPT }]
-          },
           contents: [
             {
               role: "user",
@@ -162,20 +183,25 @@ export default function App() {
                     fileUri: uploadedFile.uri
                   }
                 },
-                { text: "Extract and format the records from this medical document based entirely on your system instructions." }
+                { text: SYSTEM_PROMPT }
               ]
             }
           ],
           generationConfig: {
-            responseMimeType: "application/json",
             temperature: 0.1, // Low temperature for consistent extraction
           }
         })
       });
 
       if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(errData.error?.message || `API error: ${response.status}`);
+        let errStr = `API error: ${response.status}`;
+        try {
+           const errData = await response.json();
+           const msg = errData.error?.message || "Unknown error";
+           const details = errData.error?.details ? JSON.stringify(errData.error.details).substring(0, 300) : "";
+           errStr = `${msg} | Model: ${selectedModel} | URI: ${uploadedFile?.uri} | Details: ${details}`;
+        } catch(e) {}
+        throw new Error(errStr);
       }
 
       setStage("Parsing results...");
