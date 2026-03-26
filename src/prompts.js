@@ -35,17 +35,26 @@ These are administrative/scheduling pages, NOT medical records:
 === STEP 4: CRITICAL FORMATTING RULES ===
 1. Follow chronological/TOC order accurately.
 2. Each document = ONE bullet point starting with "- "
-3. NO duplicates — every line must be unique.
+3. NO duplicates — every line must be 100% unique. If the same document appears multiple times under different headings, list it exactly ONCE.
 4. GROUPING MULTIPLE DATES: 
    - Group multiple progress/SOAP notes of the same type (PT, Chiro, MRI Tech) into ONE line using "through": "Physical therapy SOAP progress notes dated 09/03/2025 through 10/22/2025...".
-   - If there are multiple Office Visits by the SAME exact doctor on different dates (excluding the very first Initial visit), group them into a SINGLE line formatted as: "Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD."
+   - If there are multiple Office Visits by the SAME exact doctor on different dates (excluding the very first Initial visit), group them into a SINGLE line formatted as: "Follow-up office visit reports dated mm/dd/yyyy through mm/dd/yyyy by Provider Name, MD." Make absolutely sure you identify the EARLIEST and LATEST date correctly.
    - Find the absolute earliest and latest dates for the "through" range. Do NOT list each date as a separate line.
-5. Provider name format: Ensure names are in normal First Last order. For medical doctors/physicians, DO NOT use both "Dr." and "MD" together. If the document has "MD" or "DO", format it as "Johanna Gonzalez, MD". If the document ONLY says "Dr.", format it as "Dr. Johanna Gonzalez". Never use "Dr. Johanna Gonzalez, MD". For non-physicians (DC, PT, L.Ac), use standard format (e.g., "Oliver Tello, PT").
+5. Provider name format: Read the actual credentials printed on the document.
+   - If the document explicitly shows "MD" or "DO" for a doctor, format as: "Provider Name, MD" or "Provider Name, DO". Do NOT add "Dr." prefix.
+   - If the document only shows "Dr." WITHOUT any "MD" or "DO" credential printed, format as: "Dr. Provider Name".
+   - Never use both "Dr." AND "MD" together (e.g., never "Dr. John Smith, MD").
+   - For non-physicians (DC, PT, L.Ac, ARMRIT, ASRT), use their exact credential suffix (e.g., "Oliver Tello, PT").
 6. If provider name AND facility name both available → use PROVIDER name.
 7. If multiple providers from same facility → use FACILITY name.
 8. Look closely for printed or typed provider names. Only if the doctor's signature is completely unreadable AND there is no printed name anywhere on the page → write "illegible signature".
 9. NF-2 form: list EVERY body part mentioned EXACTLY. E.g. "indicating injuries to multiple body parts in addition to neck, back, shoulders, left knee, and concussion."
-10. For ALL imaging/diagnostic reports → copy the IMPRESSION word-for-word after " -- Impression: ". You MUST strip out the numbering (1., 2., 3.) from impressions for a clean paragraph look. If no impression section exists → omit the " -- Impression: " part entirely.
+10. For ALL imaging/diagnostic reports:
+    - You MUST look for a section explicitly labeled "IMPRESSION" or "IMPRESSION:" at the bottom of the report.
+    - Copy that IMPRESSION section word-for-word after " -- Impression: ". Strip out any numbering (1., 2., 3.) for a clean paragraph look.
+    - DO NOT use the "FINDINGS" section as the impression. The Findings section describes raw observations and is NOT the Impression.
+    - ONLY if there is absolutely NO "IMPRESSION" section anywhere on that page, then fall back to using the "FINDINGS" section verbatim after " -- Impression: ".
+    - If neither Impression nor Findings exist → omit the " -- Impression: " part entirely.
 11. For procedure reports → include full detail: laterality, spinal levels FORMATTED CLEANLY (e.g. C4-5, C5-6 and C6-7 instead of duplicating the spinal letter like C4-C5), procedure name, guidance type.
 12. Do NOT invent documents. Only list what actually exists in the PDF.
 13. Capitalize first word of each bullet point only (sentence case).
