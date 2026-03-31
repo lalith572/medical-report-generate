@@ -49,7 +49,7 @@ These are administrative/scheduling pages, NOT medical records:
 6. If provider name AND facility name both available → use PROVIDER name.
 7. If multiple providers from same facility → use FACILITY name.
 8. Look closely for printed or typed provider names. If there is no provider name or facility name available, append "-- illegible signature." at the end.
-9. NF-2 form: If NF-2 form as NF-2 form, no need to type in words. Just output exactly: "indicating injuries to body parts mentioned in question #9)."
+9. NF-2 form: list EVERY body part mentioned EXACTLY. E.g. "indicating injuries to multiple body parts in addition to neck, back, shoulders, left knee, and concussion."
 10. For ALL imaging/diagnostic reports:
     - You MUST look for a section explicitly labeled "IMPRESSION" or "IMPRESSION:" at the bottom of the report.
     - Copy that IMPRESSION section word-for-word after " -- Impression: ". Strip out any numbering (1., 2., 3.) for a clean paragraph look.
